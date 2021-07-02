@@ -1,13 +1,14 @@
 
 import "./user-item.scss"
+import {Link} from "react-router-dom";
  const UserItem = ({user}) =>{
-    const {login, avatar_url, html_url} = user
+    const {login, avatar_url} = user
         return (
             <div className="card text-center">
                 <img src={avatar_url} alt="userImage" className="round-img" style={{width: '60px'}}/>
                 <h3>{login}</h3>
                 <div>
-                    <a href={html_url} className="btn btn-dark btn-sm my-1">More</a>
+                    <Link to={`/user/${login}`} className="btn btn-dark btn-sm my-1">More</Link>
                 </div>
             </div>
 

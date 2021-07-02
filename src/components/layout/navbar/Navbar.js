@@ -1,5 +1,6 @@
 import './navbar.scss';
 import PropTypes from 'prop-types';
+import {Link} from "react-router-dom";
 
 const Navbar = ({icon, title}) => {
         return (
@@ -10,8 +11,8 @@ const Navbar = ({icon, title}) => {
                 </div>
 
                 <ul className="list">
-                    <li>home</li>
-                    <li>about us</li>
+                    <Link to="/">home</Link>
+                    <Link to="/about">about us</Link>
                 </ul>
             </div>
         );

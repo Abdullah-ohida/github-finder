@@ -9,9 +9,6 @@ const Search = ({handleSearch, clearUsers, showClear, setAlert}) =>{
         setText(event.target.value.trim());
     }
 
-
-
-
     const submitHandler = (event) =>{
         event.preventDefault();
         if (text === ''){
